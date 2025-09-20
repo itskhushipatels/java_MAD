@@ -1,8 +1,7 @@
 //MAD204 Java Development for MA - LAB 1
 //  Student.java
-// @author KHUSHI PATEL
-// @studentId A00198843
-// @date September 19, 2025
+// name-KHUSHI PATEL
+// id-A00198843
 // This class models a student with a name, ID, and an array of grades.
 //It provides methods to manage grades, calculate the average, and determine a letter grade.
 public class Student {
@@ -89,3 +88,4 @@ public class Student {
         return "ID: " + this.id + ", Name: " + this.name + ", Avg: " + String.format("%.2f", average()) + " (" + letterGrade() + ")";
     }
 }
+
