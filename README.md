@@ -1,4 +1,4 @@
-MAD204-LAB01-YOURNAME
+MAD204
 Lab 1: Java Gradebook App
 Name: Khushi Patel
 Student ID: A00198843
