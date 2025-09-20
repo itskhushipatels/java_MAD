@@ -6,15 +6,15 @@
 //It provides methods to manage grades, calculate the average, and determine a letter grade.
 public class Student {
 
-    // Fields
+    
     private String name;
     private int id;
     private double[] grades;
 
 //
-//     Constructs a new Student object.
-//     @param name The student's name.
-//      @param id The student's ID.
+//     constructs a new Student object.
+//     name The student's name.
+//      id The student's ID.
 //
     public Student(String name, int id) {
         this.name = name;
@@ -32,9 +32,9 @@ public class Student {
     }
 
 //
-//      Sets a grade at a specific index.
-//      @param index The index (0-4) in the grades array.
-//      @param value The grade value to set.
+//      sets a grade at a specific index.
+//      index The index (0-4) in the grades array.
+//       value The grade value to set.
 //
     public void setGrade(int index, double value) {
         // Ensure the index is within the valid range
@@ -46,8 +46,8 @@ public class Student {
     }
 
 //
-//      Calculates the average of all grades for the student.
-//      @return The average grade as a double.
+//      calculates the average of all grades for the student.
+//      return The average grade as a double.
 //
     public double average() {
         double sum = 0;
@@ -60,8 +60,8 @@ public class Student {
     }
 
 //
-//      Determines the letter grade based on the average grade.
-//      @return A character representing the letter grade (A, B, C, D, or F).
+//      the letter grade based on the average grade.
+//      return A character representing the letter grade (A, B, C, D, or F).
 //
     public char letterGrade() {
         double avg = average();
@@ -80,12 +80,13 @@ public class Student {
     }
 
 //
-//      Provides a string representation of the Student object.
-//      @return A formatted string showing the student's ID, name, average grade, and letter grade.
+//      provides a string representation of the student object.
+//      return A formatted string showing the student's ID, name, average grade, and letter grade.
 //
     @Override
     public String toString() {
         return "ID: " + this.id + ", Name: " + this.name + ", Avg: " + String.format("%.2f", average()) + " (" + letterGrade() + ")";
     }
 }
+
 
