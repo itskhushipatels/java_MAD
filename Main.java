@@ -3,9 +3,8 @@
 // *
 // * Main.java
 // *
-// * @author [Your Full Name]
-// * @studentId [Your Student ID]
-// * @date September 19, 2025
+// * name- Khushi Patel
+// * id-198843
 // *
 // * This is a console application that acts as a Gradebook & Utilities app.
 // * It allows users to manage student records, enter grades, and run various
@@ -18,14 +17,13 @@ import java.util.Scanner;
 
 public class Main {
 
-    // Scanner for user input, declared as static to be accessible in all methods
+    // scanner for user input, declared as static to be accessible in all methods
     private static Scanner scanner = new Scanner(System.in);
-    // ArrayList to store Student objects
+    // arrayList to store Student objects
     private static ArrayList<Student> students = new ArrayList<>();
 
 //    /**
 //     * The main entry point of the application.
-//     * @param args Command-line arguments (not used in this app).
 //     */
     public static void main(String[] args) {
         System.out.println("Welcome to the Gradebook & Utilities App!");
@@ -33,11 +31,11 @@ public class Main {
     }
 
 //    /**
-//     * Displays the main menu and handles user choices in a loop.
+//     *  the main menu and handles user choices in a loop.
 //     */
     public static void mainMenu() {
         String choice;
-        // Use a do-while loop to ensure the menu is shown at least once
+        // use a do-while loop to ensure the menu is shown at least once
         do {
             System.out.println("\n--- Main Menu ---");
             System.out.println("1. Add student");
@@ -48,7 +46,7 @@ public class Main {
             System.out.print("Enter your choice: ");
             choice = scanner.nextLine();
 
-            // Use a switch statement to handle different menu options
+            // use a switch statement to handle different menu options
             switch (choice) {
                 case "1":
                     addStudent();
@@ -69,11 +67,11 @@ public class Main {
                     System.out.println("Invalid choice. Please enter a number from 1 to 5.");
                     break;
             }
-        } while (!choice.equals("5")); // The loop continues until the user chooses to exit
+        } while (!choice.equals("5")); 
     }
 
 //    /**
-//     * Prompts the user to add a new student.
+//     * prompts the user to add a new student.
 //     */
     public static void addStudent() {
         String addAnother;
@@ -94,7 +92,7 @@ public class Main {
     }
 
 //    /**
-//     * Prompts the user to enter grades for a specific student.
+//     * prompts the user to enter grades for a specific student.
 //     */
     public static void enterGrades() {
         System.out.println("\n--- Enter Grades ---");
@@ -139,7 +137,7 @@ public class Main {
     }
 
 //    /**
-//     * Displays the utilities submenu and handles user choices.
+//     * submenu and handles user choices.
 //     */
     public static void utilitiesMenu() {
         System.out.println("\n--- Utilities Menu ---");
@@ -168,7 +166,7 @@ public class Main {
     }
 
 //    /**
-//     * Demonstrates operator precedence (BODMAS).
+//     * operator precedence (BODMAS).
 //     */
     public static void operatorDemo() {
         System.out.println("\n--- Operator Precedence Demo ---");
@@ -181,7 +179,7 @@ public class Main {
     }
 
 //    /**
-//     * Demonstrates safe widening and narrowing type casting.
+//     * safe widening and narrowing type casting.
 //     */
     public static void typeCastingDemo() {
         System.out.println("\n--- Type Casting Demo ---");
@@ -199,8 +197,8 @@ public class Main {
     }
 
 //    /**
-//     * A recursive method that counts down from a given number.
-//     * @param n The number to start the countdown from.
+//     *  method that counts down from a given number.
+//     *  the number to start the countdown from.
 //     */
     public static void countdown(int n) {
         // Base case: guards against negative numbers and stops the recursion at 0
@@ -218,9 +216,7 @@ public class Main {
     }
 
 //    /**
-//     * Safely reads an integer from the console, handling input mismatches.
-//     * @param prompt The message to display to the user.
-//     * @return The valid integer entered by the user.
+//     * safely reads an integer from the console, handling input mismatches.
 //     */
     public static int getIntInput(String prompt) {
         while (true) {
@@ -239,9 +235,7 @@ public class Main {
     }
 
 //    /**
-//     * Safely reads a double from the console, handling input mismatches.
-//     * @param prompt The message to display to the user.
-//     * @return The valid double entered by the user.
+//     * safely reads a double from the console, handling input mismatches.
 //     */
     public static double getDoubleInput(String prompt) {
         while (true) {
